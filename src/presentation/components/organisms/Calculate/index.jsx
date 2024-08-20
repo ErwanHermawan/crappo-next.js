@@ -32,7 +32,7 @@ const Calculate = (props) => {
 						</div>
 						<div className={style.row}>
 							<Button type="button" variant="accent">
-								Calculate
+								<span>Calculate</span>
 							</Button>
 						</div>
 					</div>

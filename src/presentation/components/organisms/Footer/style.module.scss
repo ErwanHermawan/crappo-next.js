@@ -101,7 +101,7 @@
 		border-radius: 8px;
 		cursor: pointer;
 		background-color: rgba(color(grey, 3), 0.05);
-		transition: all 0.3s ease;
+		transition: all 0.4s ease;
 		&:hover {
 			background-color: color(secondary);
 		}
@@ -161,6 +161,17 @@
 		transition: all 0.3s ease;
 		@include font-size(h3m);
 		color: color(white);
+		overflow: hidden;
+		&::after {
+			content: "";
+			display: block;
+			width: 100%;
+			height: 100%;
+			border-radius: 50%;
+			background-color: transparent;
+			transform: scale(0);
+			transition: all 0.4s ease;
+		}
 		img {
 			position: absolute;
 			left: 50%;
@@ -172,38 +183,62 @@
 		}
 		&:global(.facebook) {
 			&:hover {
-				background-color: color(social-media, facebook);
-				color: color(white);
+				&::after {
+					transform: none;
+					transform-origin: center center;
+					background-color: color(social-media, facebook);
+					color: color(white);
+				}
 			}
 		}
 		&:global(.instagram) {
 			&:hover {
-				background-color: color(social-media, instagram);
-				color: color(white);
+				&::after {
+					transform: none;
+					transform-origin: center center;
+					background-color: color(social-media, instagram);
+					color: color(white);
+				}
 			}
 		}
 		&:global(.youtube) {
 			&:hover {
-				background-color: color(social-media, youtube);
-				color: color(white);
+				&::after {
+					transform: none;
+					transform-origin: center center;
+					background-color: color(social-media, youtube);
+					color: color(white);
+				}
 			}
 		}
 		&:global(.twitter) {
 			&:hover {
-				background-color: color(social-media, twitter);
-				color: color(white);
+				&::after {
+					transform: none;
+					transform-origin: center center;
+					background-color: color(social-media, twitter);
+					color: color(white);
+				}
 			}
 		}
 		&:global(.linkedin) {
 			&:hover {
-				background-color: color(social-media, linkedin);
-				color: color(white);
+				&::after {
+					transform: none;
+					transform-origin: center center;
+					background-color: color(social-media, linkedin);
+					color: color(white);
+				}
 			}
 		}
 		&:global(.telegram) {
 			&:hover {
-				background-color: color(social-media, telegram);
-				color: color(white);
+				&::after {
+					transform: none;
+					transform-origin: center center;
+					background-color: color(social-media, telegram);
+					color: color(white);
+				}
 			}
 		}
 	}

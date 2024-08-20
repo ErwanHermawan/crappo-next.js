@@ -9,6 +9,11 @@ import useStateHeader from "core/states/header";
 // -- widgets
 import WhyCrappoWidget from "@widgets/WhyCrappoWidget";
 import CalculateWidget from "@widgets/CalculateWidget";
+import CryptoCurrenciesWidget from "@widgets/CryptoCurrenciesWidget";
+import InvestSmartWidget from "@widgets/InvestSmartWidget";
+import StatisticsWidget from "@widgets/StatisticsWidget";
+import ProfitInvestmentsWidget from "@widgets/ProfitInvestmentsWidget";
+import SubsribeWidget from "@widgets/SubscribeWidget";
 
 // -- components
 import HeroBanner from "@organisms/HeroBanner";
@@ -44,6 +49,11 @@ const Home = (props) => {
 			{/* CSR */}
 			<WhyCrappoWidget />
 			<CalculateWidget />
+			<CryptoCurrenciesWidget />
+			<InvestSmartWidget />
+			<StatisticsWidget />
+			<ProfitInvestmentsWidget />
+			<SubsribeWidget />
 		</>
 	);
 };
