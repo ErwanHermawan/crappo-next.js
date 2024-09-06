@@ -29,6 +29,7 @@
 	@include small {
 		@include font-size(h5);
 		position: relative;
+		margin-bottom: 16px;
 		&::before,
 		&::after {
 			content: "";

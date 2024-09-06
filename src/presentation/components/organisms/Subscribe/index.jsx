@@ -42,7 +42,7 @@ const Subscribe = (props) => {
 						</div>
 						<div className={style.row}>
 							<Button type="button" variant="white" onClick={handleSubmit}>
-								Subscribe
+								<span>Subscribe</span>
 							</Button>
 						</div>
 					</form>

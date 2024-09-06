@@ -49,7 +49,7 @@ const Statistics = (props) => {
 							<h2 className={style.textTitle}>{data?.title}</h2>
 							<p className={style.textDesc}>{data?.description}</p>
 							<Button variant="accent" href={data?.button.to}>
-								{data?.button.text}
+								<span>{data?.button.text}</span>
 							</Button>
 						</div>
 					</div>

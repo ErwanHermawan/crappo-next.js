@@ -55,7 +55,7 @@ const InvestSmart = (props) => {
 						<h2 className={style.textTitle}>{data?.section.title}</h2>
 						<p className={style.textDesc}>{data?.section.description}</p>
 						<Button variant="accent" href={data?.section.button.to}>
-							{data?.section.button.text}
+							<span>{data?.section.button.text}</span>
 						</Button>
 					</div>
 				</div>

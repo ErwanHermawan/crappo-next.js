@@ -28,7 +28,7 @@ const FooterItem = (props) => {
 	}, []);
 	if (width < 767.98) {
 		showClass = isActive ? "show" : "";
-		styleActive = isActive ? { paddingBottom: height } : {};
+		styleActive = isActive ? { paddingBottom: height + 4 } : {};
 	}
 
 	return (
