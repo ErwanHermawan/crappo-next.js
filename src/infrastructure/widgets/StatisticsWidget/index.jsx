@@ -19,8 +19,7 @@ const StatisticsWidget = () => {
 			document.body.scrollTop;
 		const calculate = document.getElementById("calculate");
 		if (calculate) {
-			const startScroll =
-				calculate.offsetTop + calculate.clientHeight / 2;
+			const startScroll = calculate.offsetTop + calculate.clientHeight / 2;
 
 			if (scrollTop > startScroll && !callStatisticsData) {
 				setCallStatisticsData(true);
@@ -46,7 +45,7 @@ const StatisticsWidget = () => {
 		return () => {
 			window.addEventListener("scroll", handleScroll);
 		};
-	}, []);
+	});
 
 	return <Statistics ready={statisticsReady} data={statisticsData} />;
 	// return <Statistics ready={ready} data={data?.data} error={error} />;

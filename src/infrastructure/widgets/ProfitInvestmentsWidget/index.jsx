@@ -47,7 +47,7 @@ const ProfitInvestmentsWidget = () => {
 		return () => {
 			window.addEventListener("scroll", handleScroll);
 		};
-	}, []);
+	});
 
 	return (
 		<ProfitInvestments

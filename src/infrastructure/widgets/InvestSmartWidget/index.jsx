@@ -45,7 +45,7 @@ const InvestSmartWidget = () => {
 		return () => {
 			window.addEventListener("scroll", handleScroll);
 		};
-	}, []);
+	});
 
 	return <InvestSmart ready={investReady} data={investData} />;
 };

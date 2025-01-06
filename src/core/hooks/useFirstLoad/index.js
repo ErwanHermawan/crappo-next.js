@@ -18,7 +18,7 @@ const useFirstLoad = (model) => {
 
 	useEffect(() => {
 		handleFetch();
-	}, []);
+	});
 
 	return {
 		ready,
