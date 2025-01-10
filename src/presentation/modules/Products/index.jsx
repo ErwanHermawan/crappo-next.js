@@ -38,10 +38,10 @@ const Products = (props) => {
 			{/* SSR */}
 			<HeroBanner
 				ready={true}
-				data={heroBannerData.data}
+				data={heroBannerData?.data}
 				error={heroBannerError}
 			/>
-			<Numbers ready={true} data={numbersData.data} error={numbersError} />
+			<Numbers ready={true} data={numbersData?.data} error={numbersError} />
 			{/* CSR */}
 			<WhyCrappoWidget />
 			{/* SUBMIT */}
