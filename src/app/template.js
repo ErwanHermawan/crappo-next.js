@@ -9,7 +9,7 @@ const Template = (props) => {
 		<>
 			<HeaderWidget />
 			<main className="main">{children}</main>
-			{/* <FooterWidget /> */}
+			<FooterWidget />
 		</>
 	);
 };
