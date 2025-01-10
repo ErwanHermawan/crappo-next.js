@@ -70,14 +70,14 @@ const HeroBanner = (props) => {
 
 	let classNameSingle = style.banner;
 	if (ready && error !== null) {
-		if (data.length === 1) {
+		if (data?.length === 1) {
 			if (showSingle) {
 				classNameSingle += " banner-single";
 			}
 		}
 	}
 
-	if (data.length === 1) {
+	if (data?.length === 1) {
 		return (
 			<section
 				className={classNameSingle}
@@ -86,7 +86,7 @@ const HeroBanner = (props) => {
 				initial="initial"
 				animate="enter"
 			>
-				{data.map((val, idx) => {
+				{data?.map((val, idx) => {
 					return (
 						<div className={style.item} key={`hb-${idx}`}>
 							<div className={style.middleAlign}>
@@ -104,7 +104,7 @@ const HeroBanner = (props) => {
 	return (
 		<section className={classNameSingle} id="hero-banner">
 			<Slider {...settings}>
-				{data.map((val, idx) => {
+				{data?.map((val, idx) => {
 					return (
 						<div className={style.item} key={`hb-${idx}`}>
 							<div className={style.middleAlign}>

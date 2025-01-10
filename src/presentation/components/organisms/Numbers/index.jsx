@@ -20,7 +20,7 @@ const Numbers = (props) => {
 		<section className={style.numbers} id="numbers">
 			<div className="container">
 				<div className={style.list}>
-					{data.map((val, idx) => {
+					{data?.map((val, idx) => {
 						return (
 							<div className={style.item} key={`f-${idx}`}>
 								<NumbersItem data={val} />

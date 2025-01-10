@@ -1,6 +1,6 @@
 // --- DefaultSEO
 const DefaultSEO = {
-	title: "Next.js App Router Template",
+	title: "Crappo",
 	description: "Description Crappo",
 	keywords: "crappo, jquery template, project website, bilik media",
 	timeRefresh: 900,

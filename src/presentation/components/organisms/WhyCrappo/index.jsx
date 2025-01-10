@@ -39,20 +39,20 @@ const WhyCrappo = (props) => {
 							width={568}
 							height={448}
 							className={style.el}
-							src={data.image}
-							alt={data.title}
+							src={data?.image}
+							alt={data?.title}
 						/>
 					</div>
 					<div className={style.text}>
-						<h2 className={style.title}>{data.title}</h2>
-						<p className={style.desc}>{data.description}</p>
+						<h2 className={style.title}>{data?.title}</h2>
+						<p className={style.desc}>{data?.description}</p>
 						<Button
 							variant="accent"
 							category="icon"
-							href={data.button.to}
+							href={data?.button.to}
 							icon="chevron-right"
 						>
-							<span>{data.button.text}</span>
+							<span>{data?.button.text}</span>
 						</Button>
 					</div>
 				</div>

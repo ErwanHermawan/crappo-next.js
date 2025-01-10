@@ -1,5 +1,6 @@
 // -- utils
 import metaTag, { MetaTagDefault } from "@utils/metaTag";
+import { SchemaDefault } from "@utils/schema";
 
 // -- style
 import "@styles/app.scss";
@@ -19,6 +20,7 @@ const RootLayout = (props) => {
 			{/* -- THE HEAD -- */}
 			<head>
 				<MetaTagDefault />
+				{<SchemaDefault />}
 			</head>
 
 			{/* -- THE HEAD -- */}
