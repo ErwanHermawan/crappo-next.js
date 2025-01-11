@@ -1,6 +1,7 @@
 // -- utils
 import metaTag, { MetaTagDefault } from "@utils/metaTag";
 import { SchemaDefault } from "@utils/schema";
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 // -- style
 import "@styles/app.scss";
@@ -22,6 +23,7 @@ const RootLayout = (props) => {
 				<MetaTagDefault />
 				{<SchemaDefault />}
 			</head>
+			<GoogleAnalytics gaId="G-XYZ" />
 
 			{/* -- THE HEAD -- */}
 			<body>{children}</body>

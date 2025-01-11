@@ -13,7 +13,7 @@ import style from "./style.module.scss";
 import HeroBannerItem from "@molecules/HeroBannerItem";
 
 const HeroBanner = (props) => {
-	const { ready, data, error } = props;
+	const { ready, data, error, title } = props;
 
 	const [showSingle, setShowSingle] = useState(false);
 
@@ -91,7 +91,7 @@ const HeroBanner = (props) => {
 						<div className={style.item} key={`hb-${idx}`}>
 							<div className={style.middleAlign}>
 								<div className="container">
-									<HeroBannerItem {...val} />
+									<HeroBannerItem {...val} ttl={title} />
 								</div>
 							</div>
 						</div>
@@ -109,7 +109,7 @@ const HeroBanner = (props) => {
 						<div className={style.item} key={`hb-${idx}`}>
 							<div className={style.middleAlign}>
 								<div className="container">
-									<HeroBannerItem data={val} id={idx} />
+									<HeroBannerItem data={val} id={idx} title={title} />
 								</div>
 							</div>
 						</div>

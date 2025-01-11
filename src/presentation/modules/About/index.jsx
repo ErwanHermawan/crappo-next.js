@@ -1,7 +1,7 @@
 "use client";
 
 // -- core
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 // -- states
 import useStateHeader from "@states/header";
@@ -14,7 +14,7 @@ import SubsribeWidget from "@widgets/SubscribeWidget";
 import HeroBanner from "@organisms/HeroBanner";
 import Numbers from "@organisms/Numbers";
 
-const Products = (props) => {
+const About = (props) => {
 	// data
 	const { ssrData } = props;
 	const { heroBanner, numbers } = ssrData;
@@ -29,7 +29,7 @@ const Products = (props) => {
 	const { setMenu } = useStateHeader();
 
 	useEffect(() => {
-		setMenu("products");
+		setMenu("about");
 		// eslint-disable-next-line
 	}, []);
 
@@ -39,16 +39,14 @@ const Products = (props) => {
 			<HeroBanner
 				ready={true}
 				data={heroBannerData?.data}
-				title="Products"
+				title="About"
 				error={heroBannerError}
 			/>
 			<Numbers ready={true} data={numbersData?.data} error={numbersError} />
-			{/* CSR */}
-			<WhyCrappoWidget />
 			{/* SUBMIT */}
 			<SubsribeWidget />
 		</>
 	);
 };
 
-export default Products;
+export default About;

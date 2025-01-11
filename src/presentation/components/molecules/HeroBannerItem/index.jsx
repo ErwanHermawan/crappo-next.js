@@ -8,7 +8,7 @@ import style from "./style.module.scss";
 import Button from "@atoms/Button";
 
 const HeroBannerItem = (props) => {
-	const { data, id } = props;
+	const { data, id, title } = props;
 
 	return (
 		<div className={style.banner}>
@@ -27,9 +27,15 @@ const HeroBannerItem = (props) => {
 					<p className={style.saleDesc}>{data.sale.desc}</p>
 				</div>
 				{id > 0 ? (
-					<h2 className={style.title}>{data.title}</h2>
+					<h2 className={style.title}>
+						{title !== undefined ? title + " | " : ""}
+						{data.title}
+					</h2>
 				) : (
-					<h1 className={style.title}>{data.title}</h1>
+					<h1 className={style.title}>
+						{title !== undefined ? title + " | " : ""}
+						{data.title}
+					</h1>
 				)}
 				<p className={style.desc}>{data.desc}</p>
 				<div className={style.btn}>

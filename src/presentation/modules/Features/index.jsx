@@ -39,6 +39,7 @@ const Features = (props) => {
 			<HeroBanner
 				ready={true}
 				data={heroBannerData?.data}
+				title="Features"
 				error={heroBannerError}
 			/>
 			<Numbers ready={true} data={numbersData?.data} error={numbersError} />
