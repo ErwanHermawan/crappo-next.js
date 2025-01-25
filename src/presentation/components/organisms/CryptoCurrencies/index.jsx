@@ -5,7 +5,17 @@ import style from "./style.module.scss";
 import CryptoItem from "@molecules/CryptoItem";
 
 const CryptoCurrencies = (props) => {
-	const { ready, data, error } = props;
+	const { ready = false, data, error } = props;
+
+	console.log("data", data);
+
+	if (!ready) {
+		return (
+			<section className="placeholder">
+				<h1>Content not loaded</h1>
+			</section>
+		);
+	}
 
 	return (
 		<section className={style.crypto} id="crypto-currencies">

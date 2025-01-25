@@ -19,6 +19,7 @@ const HeroBannerItem = (props) => {
 					className={style.el}
 					src={data.img ? data.img : ""}
 					alt={data.title ? data.title : ""}
+					loading="lazy"
 				/>
 			</div>
 			<div className={style.text}>

@@ -21,12 +21,14 @@ const RootLayout = (props) => {
 			{/* -- THE HEAD -- */}
 			<head>
 				<MetaTagDefault />
-				{<SchemaDefault />}
+				<GoogleAnalytics gaId="G-MWDGM2FQET" />
 			</head>
-			<GoogleAnalytics gaId="G-MWDGM2FQET" />
 
 			{/* -- THE HEAD -- */}
-			<body>{children}</body>
+			<body>
+				{children}
+				{<SchemaDefault />}
+			</body>
 		</html>
 	);
 };
